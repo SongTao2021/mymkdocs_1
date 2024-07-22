@@ -18,7 +18,7 @@
     
     
       
-        <title>My Docs</title>
+        <title>FuSai</title>
       
     
     
@@ -86,7 +86,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="." title="FuSai" class="md-header__button md-logo" aria-label="FuSai" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5Z"/></svg>
@@ -100,7 +100,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            My Docs
+            FuSai
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -207,13 +207,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="." title="FuSai" class="md-nav__button md-logo" aria-label="FuSai" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5Z"/></svg>
 
     </a>
-    My Docs
+    FuSai
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -285,6 +285,30 @@
       Project layout
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Project layout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      网页更新流程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    <span class="md-ellipsis">
+      git 命令
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -505,6 +529,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Project layout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      网页更新流程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    <span class="md-ellipsis">
+      git 命令
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -536,6 +584,38 @@
 <span class="linenos" data-linenos="2 "></span>docs/
 <span class="linenos" data-linenos="3 "></span>    index.md  # The documentation homepage.
 <span class="linenos" data-linenos="4 "></span>    ...       # Other markdown pages, images and other files.
+</code></pre></div>
+<div class="language-powershell highlight"><span class="filename">PowerShell</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><a href="#__codelineno-0-1"><span class="linenos" data-linenos="1 "></span></a><span class="n">pip</span> <span class="n">install</span> <span class="n">mkdocs-material</span> <span class="n">-i</span> <span class="n">https</span><span class="p">://</span><span class="n">pypi</span><span class="p">.</span><span class="n">tuna</span><span class="p">.</span><span class="n">tsinghua</span><span class="p">.</span><span class="n">edu</span><span class="p">.</span><span class="n">cn</span><span class="p">/</span><span class="n">simple</span>  
+</code></pre></div>
+<h3 id="_1">网页更新流程<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>修改 *.md 文件</p>
+</li>
+<li>
+<p>在 power shell进入站点根目录后，输入 <code>mkdocs  serve</code></p>
+</li>
+<li>
+<p>在 power shell站点根目录输入 <code>mkdocs build</code>,生成或更新site目录</p>
+</li>
+<li>
+<p>在站点根目录打开 git bash ,一次输入</p>
+</li>
+</ol>
+<div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><a href="#__codelineno-1-1"><span class="linenos" data-linenos="1 "></span></a>git<span class="w"> </span>init
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><a href="#__codelineno-1-2"><span class="linenos" data-linenos="2 "></span></a>git<span class="w"> </span>add<span class="w"> </span>.
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><a href="#__codelineno-1-3"><span class="linenos" data-linenos="3 "></span></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Initial commit&quot;</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><a href="#__codelineno-1-4"><span class="linenos" data-linenos="4 "></span></a>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>gh-pages
+</code></pre></div>
+<h3 id="git">git 命令<a class="headerlink" href="#git" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><a href="#__codelineno-2-1"><span class="linenos" data-linenos="1 "></span></a><span class="m">1</span>、git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>https://github.com/SongTao2021/mymkdocs.git
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><a href="#__codelineno-2-2"><span class="linenos" data-linenos="2 "></span></a>例：git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>https://github.com/SongTao2021/mymkdocs_1.git
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><a href="#__codelineno-2-3"><span class="linenos" data-linenos="3 "></span></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a><a href="#__codelineno-2-4"><span class="linenos" data-linenos="4 "></span></a><span class="m">2</span>、git<span class="w"> </span>branch
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a><a href="#__codelineno-2-5"><span class="linenos" data-linenos="5 "></span></a>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a><a href="#__codelineno-2-6"><span class="linenos" data-linenos="6 "></span></a><span class="m">3</span>、git<span class="w"> </span>remote<span class="w"> </span>remove<span class="w"> </span>origin
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a><a href="#__codelineno-2-7"><span class="linenos" data-linenos="7 "></span></a>
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a><a href="#__codelineno-2-8"><span class="linenos" data-linenos="8 "></span></a><span class="m">4</span>、git<span class="w"> </span>remote<span class="w"> </span>-v<span class="w"> </span><span class="c1">#查看 Git 仓库中配置的远程仓库及其对应的 URL,这个命令会列出所有的远程仓库及其 fetch 和 push URL。</span>
 </code></pre></div>
 
 
