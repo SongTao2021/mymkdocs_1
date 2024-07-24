@@ -1,10 +1,45 @@
+/* 白天模式 */
+/*@media (prefers-color-scheme: light) {
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+}*/
+
+/* 夜晚模式 */
+/*@media (prefers-color-scheme: dark) {
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  table, th, td {
+    border: 1px solid white;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+}*/
+
+
 table {
   border-collapse: collapse;
   width: 100%;
 }
 
 table, th, td {
-  border: 1px solid black;
+  border: 1.3px solid grey;
 }
 
 th, td {
